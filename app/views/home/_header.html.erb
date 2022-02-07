@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #e3f2fd;">
+  <%= link_to 'TicketingApp',root_path,class:"navbar-brand"%>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "AboutUs",home_about_path,class:"nav-link"%>
+      </li>
+      <li class="nav-item active">
+        <%= link_to "SignUp", new_user_registration_path,class:"nav-link"%>
+      </li>
+      <li class="nav-item active">
+        <%= link_to "SignIn",new_user_session_path,class:"nav-link"%>
+      </li>
+
+      <li class="nav-item active">
+        <%= link_to "SignOut", destroy_user_session_path,method: :delete,class:"nav-link"%>
+      </li>
+
+      <li class="nav-item active">
+        <%= link_to "EditProfile", edit_user_registration_path,class:"nav-link"%>
+      </li>
+
+
+
+    </ul>
+
+  </div>
+</nav>
